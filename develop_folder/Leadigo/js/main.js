@@ -3,7 +3,7 @@
   if (y) y.textContent = String(new Date().getFullYear());
 
   /* ===== Google Sheets: אחרי שתיצור גיליון + Apps Script, הדבק כאן את כתובת ה־Web App (מסתיימת ב־/exec) ===== */
-  var GOOGLE_SHEETS_WEBAPP_URL = "";
+  var GOOGLE_SHEETS_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbyfB7EfKsum0SJslxvr3m_5Odne63V9nGIWAuuDeOkqIfz85sbzo33OpYslmPKCL3SL0Q/exec";
 
   var form = document.getElementById("contact-form");
   var status = document.getElementById("form-status");
