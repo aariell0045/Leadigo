@@ -27,6 +27,51 @@
     </header>
 
     <main id="main">
+      <section id="lead" class="section lead lead--top">
+        <div class="container lead__grid">
+          <div class="lead-top__info">
+            <h2 class="section__title lead-top__title"><span>השאירו פרטים</span></h2>
+          </div>
+          <form class="form" id="contact-form" novalidate>
+            <label class="field">
+              <span>שם מלא</span>
+              <input name="name" type="text" autocomplete="name" required />
+            </label>
+            <label class="field">
+              <span>טלפון</span>
+              <input name="phone" type="tel" autocomplete="tel" inputmode="tel" required />
+            </label>
+            <label class="field">
+              <span>אימייל (אופציונלי)</span>
+              <input name="email" type="email" autocomplete="email" />
+            </label>
+            <label class="field">
+              <span>שם העסק (אופציונלי)</span>
+              <input name="business" type="text" autocomplete="organization" />
+            </label>
+            <label class="field">
+              <span>מה הכי חשוב לכם עכשיו?</span>
+              <select name="focus" required>
+                <option value="" selected disabled>בחרו</option>
+                <option value="retention">שימור לקוחות / נטישה</option>
+                <option value="automations">אוטמציות ומבצעים</option>
+                <option value="support">מוקד שירות / ריבוי נציגים</option>
+                <option value="overview">הכל — רוצים תמונת מצב</option>
+              </select>
+            </label>
+            <label class="field field--full">
+              <span>הערה קצרה (אופציונלי)</span>
+              <textarea name="note" rows="3" placeholder="למשל: כמה נציגים, איזו מערכת CRM, או אילו שליחים קיימים"></textarea>
+            </label>
+            <button class="btn btn--primary btn--block" type="submit">שליחה</button>
+            <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+            <p class="form__fallback" id="form-fallback-tel" hidden>
+              <a class="form-fallback__link" href="tel:+972502203450" dir="ltr">או התקשרו: +972-50-220-3450</a>
+            </p>
+          </form>
+        </div>
+      </section>
+
       <section class="section wa-solution" id="wa-solution" aria-labelledby="wa-solution-title">
         <div class="container wa-solution__stack">
           <h2 class="section__title wa-solution__main-title" id="wa-solution-title">מערכת חכמה לניהול כל פעילות השירות והמכירה ב־WhatsApp</h2>
@@ -41,9 +86,6 @@
                 התוצאה: פחות עומס, תגובה מהירה יותר, ותהליך עבודה ברור לכל הצוות.
               </p>
             </div>
-            <figure class="wa-intro__media">
-              <img src="images/whatsapp-solution-hero.png" alt="פתרון LEADIGO לניהול שירות ומכירה ב-WhatsApp" loading="eager" decoding="async" />
-            </figure>
           </article>
 
           <article class="wa-block wa-block--top">
@@ -84,9 +126,6 @@
                 <li>מנהל תיק לקוח לכל שאלה</li>
               </ul>
             </div>
-            <figure class="wa-block__media">
-              <img src="images/leadigo-easy-use.png" alt="ליווי ותמיכה בשימוש במוצר LEADIGO" loading="lazy" decoding="async" />
-            </figure>
           </article>
 
           <article class="wa-block wa-block--fourth">
@@ -97,9 +136,6 @@
                 נציג כולל הודעות שמורות לייעול המענה, מעקב, צ'אטים יוצאים ועוד.
               </p>
             </div>
-            <figure class="wa-block__media">
-              <img src="images/leadigo-professional-chats.png" alt="צ'אטים והתכתבות אישית עם כל נמען ב-WhatsApp" loading="lazy" decoding="async" />
-            </figure>
           </article>
 
           <section class="section testimonials" aria-label="ביקורות לקוחות">
@@ -151,42 +187,15 @@
         </div>
       </section>
 
-      <section id="lead" class="section lead lead--top">
-        <div class="container lead__grid">
-          <div class="lead-top__info">
-            <h2 class="section__title lead-top__title"><span>השאירו פרטים</span></h2>
-          </div>
-          <form class="form" id="contact-form" novalidate>
-            <label class="field">
-              <span>שם מלא</span>
-              <input name="name" type="text" autocomplete="name" required />
-            </label>
-            <label class="field">
-              <span>טלפון</span>
-              <input name="phone" type="tel" autocomplete="tel" inputmode="tel" required />
-            </label>
-            <button class="btn btn--primary btn--block" type="submit">צור קשר</button>
-            <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
-            <p class="form__fallback" id="form-fallback-tel" hidden>
-              <a class="form-fallback__link" href="tel:+972502203450" dir="ltr">או התקשרו: +972-50-220-3450</a>
-            </p>
-          </form>
-        </div>
-      </section>
-
       <section class="hero">
         <div class="container hero__grid">
           <div class="hero__copy">
             <p class="eyebrow">LEADIGO · מוקד שירות ומכירה ב־WhatsApp</p>
             <h1>פשוט, ברור ומהיר: כל השיחות במקום אחד</h1>
             <p class="lead">מענה אוטומטי + נציגים, בקרה בזמן אמת ותהליכי עבודה מסודרים בלי עומס.</p>
-            <p class="contact-line">
-              <strong>לשירותכם:</strong>
-              <a class="inline-link" href="tel:+972502203450" dir="ltr">+972-50-220-3450</a>
-            </p>
+            <p class="contact-line"><a class="inline-link" href="tel:+972502203450" dir="ltr">+972-50-220-3450</a></p>
             <div class="hero__actions">
               <a class="btn btn--primary" href="#lead">השאירו פרטים</a>
-              <a class="btn btn--link" href="#visuals">לראות את המערכת</a>
             </div>
             <ul class="hero__checklist" role="list">
               <li>בוטים + AI + נציגים</li>
@@ -231,29 +240,6 @@
         </div>
       </section>
 
-      <section id="visuals" class="section visual-strip" aria-label="תצוגה מערכת LEADIGO">
-        <div class="container">
-          <h2 class="section__title">כך זה נראה במערכת</h2>
-          <p class="section__sub">טעימה מהמסכים המרכזיים — בלי עומס, עם פוקוס על מה שחשוב.</p>
-          <div class="visual-teaser">
-            <article class="visual-teaser__main">
-              <img src="images/leadigo-dashboard.png" alt="LEADIGO — מסך דשבורד מרכזי" loading="lazy" decoding="async" />
-              <p>דשבורד חי: ביצועים, עומסים וניהול בזמן אמת</p>
-            </article>
-            <div class="visual-teaser__side">
-              <article class="visual-teaser__mini">
-                <img src="images/leadigo-bot.png" alt="LEADIGO — עורך בוט ותסריט שיחה" loading="lazy" decoding="async" />
-                <p>בוט ותסריטי שיחה</p>
-              </article>
-              <article class="visual-teaser__mini">
-                <img src="images/leadigo-campaigns.png" alt="LEADIGO — ניהול אנשי קשר וקמפיינים" loading="lazy" decoding="async" />
-                <p>קמפיינים ואנשי קשר</p>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section class="section closing-cta" aria-label="סיום">
         <div class="container closing-cta__inner">
           <h2>רוצים לראות איך זה עובד אצלכם?</h2>
@@ -269,7 +255,6 @@
       <div class="container footer__inner">
         <img class="footer__logo" src="images/brand/leadigo_icon_app_white.png" alt="סמל LEADIGO" loading="lazy" decoding="async" />
         <p class="footer__line">
-          <strong>לשירותכם:</strong>
           <a class="footer__link" href="tel:+972502203450" dir="ltr">+972-50-220-3450</a>
         </p>
         <p class="footer__muted">© <span id="y"></span> LEADIGO · כל הזכויות שמורות</p>
