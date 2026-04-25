@@ -30,7 +30,7 @@
     params.set("focus", (fd.get("focus") && String(fd.get("focus"))) || "");
     params.set("note", note.replace(/\r?\n/g, " ").trim());
 
-    var fallback = document.getElementById("form-fallback-wa");
+    var fallback = document.getElementById("form-fallback-tel");
     if (fallback) {
       fallback.hidden = true;
     }
@@ -52,7 +52,7 @@
         form.reset();
       })
       .catch(function () {
-        status.textContent = "השליחה נכשלה (רשת/חסימה). נסו שוב, או כתבו בוואטסאפ.";
+        status.textContent = "השליחה נכשלה (רשת/חסימה). נסו שוב, או התקשרו לטלפון.";
         status.style.color = "#b91c1c";
         if (fallback) {
           fallback.hidden = false;
