@@ -27,51 +27,6 @@
     </header>
 
     <main id="main">
-      <section id="lead" class="section lead lead--top">
-        <div class="container lead__grid">
-          <div class="lead-top__info">
-            <h2 class="section__title lead-top__title"><span>השאירו פרטים</span></h2>
-          </div>
-          <form class="form" id="contact-form" novalidate>
-            <label class="field">
-              <span>שם מלא</span>
-              <input name="name" type="text" autocomplete="name" required />
-            </label>
-            <label class="field">
-              <span>טלפון</span>
-              <input name="phone" type="tel" autocomplete="tel" inputmode="tel" required />
-            </label>
-            <label class="field">
-              <span>אימייל (אופציונלי)</span>
-              <input name="email" type="email" autocomplete="email" />
-            </label>
-            <label class="field">
-              <span>שם העסק (אופציונלי)</span>
-              <input name="business" type="text" autocomplete="organization" />
-            </label>
-            <label class="field">
-              <span>מה הכי חשוב לכם עכשיו?</span>
-              <select name="focus" required>
-                <option value="" selected disabled>בחרו</option>
-                <option value="retention">שימור לקוחות / נטישה</option>
-                <option value="automations">אוטמציות ומבצעים</option>
-                <option value="support">מוקד שירות / ריבוי נציגים</option>
-                <option value="overview">הכל — רוצים תמונת מצב</option>
-              </select>
-            </label>
-            <label class="field field--full">
-              <span>הערה קצרה (אופציונלי)</span>
-              <textarea name="note" rows="3" placeholder="למשל: כמה נציגים, איזו מערכת CRM, או אילו שליחים קיימים"></textarea>
-            </label>
-            <button class="btn btn--primary btn--block" type="submit">שליחה</button>
-            <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
-            <p class="form__fallback" id="form-fallback-tel" hidden>
-              <a class="form-fallback__link" href="tel:+972502203450" dir="ltr">או התקשרו: +972-50-220-3450</a>
-            </p>
-          </form>
-        </div>
-      </section>
-
       <section class="section wa-solution" id="wa-solution" aria-labelledby="wa-solution-title">
         <div class="container wa-solution__stack">
           <h2 class="section__title wa-solution__main-title" id="wa-solution-title">מערכת חכמה לניהול כל פעילות השירות והמכירה ב־WhatsApp</h2>
@@ -184,6 +139,51 @@
               </article>
             </div>
           </section>
+        </div>
+      </section>
+
+      <section id="lead" class="section lead lead--top">
+        <div class="container lead__grid">
+          <div class="lead-top__info">
+            <h2 class="section__title lead-top__title"><span>השאירו פרטים</span></h2>
+          </div>
+          <form class="form" id="contact-form" novalidate>
+            <label class="field">
+              <span>שם מלא</span>
+              <input name="name" type="text" autocomplete="name" required />
+            </label>
+            <label class="field">
+              <span>טלפון</span>
+              <input name="phone" type="tel" autocomplete="tel" inputmode="tel" required />
+            </label>
+            <label class="field">
+              <span>אימייל (אופציונלי)</span>
+              <input name="email" type="email" autocomplete="email" />
+            </label>
+            <label class="field">
+              <span>שם העסק (אופציונלי)</span>
+              <input name="business" type="text" autocomplete="organization" />
+            </label>
+            <label class="field">
+              <span>מה הכי חשוב לכם עכשיו?</span>
+              <select name="focus" required>
+                <option value="" selected disabled>בחרו</option>
+                <option value="retention">שימור לקוחות / נטישה</option>
+                <option value="automations">אוטמציות ומבצעים</option>
+                <option value="support">מוקד שירות / ריבוי נציגים</option>
+                <option value="overview">הכל — רוצים תמונת מצב</option>
+              </select>
+            </label>
+            <label class="field field--full">
+              <span>הערה קצרה (אופציונלי)</span>
+              <textarea name="note" rows="3" placeholder="למשל: כמה נציגים, איזו מערכת CRM, או אילו שליחים קיימים"></textarea>
+            </label>
+            <button class="btn btn--primary btn--block" type="submit">שליחה</button>
+            <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+            <p class="form__fallback" id="form-fallback-tel" hidden>
+              <a class="form-fallback__link" href="tel:+972502203450" dir="ltr">או התקשרו: +972-50-220-3450</a>
+            </p>
+          </form>
         </div>
       </section>
 
