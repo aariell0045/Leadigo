@@ -168,6 +168,26 @@ video {
   .lead-top__info {
     text-align: center;
   }
+  .lead-top__title {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .lead-top__title-logo {
+    width: 94px;
+    border-radius: 10px;
+  }
+  .lead-top__logo {
+    width: 150px;
+    margin: 0 auto 0.6rem;
+  }
+  .logo__img--header {
+    width: 28px;
+    height: 28px;
+    padding: 4px;
+  }
+  .logo__text {
+    font-size: 0.92rem;
+  }
   .flow {
     gap: 10px;
   }
@@ -181,6 +201,22 @@ video {
   gap: 10px;
   min-width: 0;
 }
+.logo__img {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  flex: 0 0 auto;
+  background: transparent;
+}
+.logo__img--header {
+  width: 30px;
+  height: 30px;
+  padding: 4px;
+  border-radius: 9px;
+  background: #0b1220;
+  border: 1px solid #1f3048;
+  box-shadow: 0 4px 10px rgba(2, 6, 23, 0.2);
+}
 .logo__mark {
   width: 12px;
   height: 12px;
@@ -190,12 +226,13 @@ video {
   flex: 0 0 auto;
 }
 .logo__text {
-  font-weight: 700;
+  font-weight: 800;
   color: #0f172a;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
 }
 
 /* Buttons */
@@ -736,6 +773,33 @@ html[dir="ltr"] .bullets li {
 .lead-top__info {
   text-align: right;
 }
+.lead-top__title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+.lead-top__title-logo {
+  width: 108px;
+  height: auto;
+  border-radius: 12px;
+  padding: 0.2rem 0.45rem;
+  background: linear-gradient(180deg, #ffffff, #f7fbff);
+  border: 1px solid #deebf6;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+}
+.lead-top__logo {
+  width: 168px;
+  height: auto;
+  display: block;
+  margin: 0 0 0.75rem auto;
+}
+.lead-top__logo--hero {
+  background: linear-gradient(180deg, #ffffff, #f8fbff);
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 0.35rem 0.6rem;
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.05);
+}
 .lead-top__info .section__sub {
   max-width: none;
 }
@@ -946,6 +1010,21 @@ textarea:focus {
 .footer__inner {
   display: grid;
   gap: 0.4rem;
+}
+.footer__logo {
+  width: 28px;
+  height: auto;
+  padding: 3px;
+  border-radius: 8px;
+  background: rgba(2, 6, 23, 0.55);
+  border: 1px solid rgba(148, 163, 184, 0.28);
+}
+.footer__logo--soft {
+  padding: 0.25rem 0.45rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  box-shadow: 0 3px 10px rgba(2, 6, 23, 0.25);
 }
 .footer__line {
   margin: 0;
