@@ -605,7 +605,7 @@ select { cursor: pointer; }
 @media (max-width: 479px) {
 
   /* 1. Header — shrink wordmark, make CTA a normal small pill */
-  .site-header { top: 20px; width: calc(100% - 32px); }
+  .site-header { top: 40px; width: calc(100% - 32px); }
   .header__inner {
     height: 56px;
     padding-inline-start: 16px;
@@ -630,7 +630,7 @@ select { cursor: pointer; }
 
   /* 3. Tighten hero bottom + stats spacing */
   .hero {
-    padding-top: calc(56px + 20px + 56px);
+    padding-top: calc(56px + 40px + 40px);
     padding-bottom: 40px;
   }
   .stat-item { padding: 18px 8px; }
