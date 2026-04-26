@@ -598,3 +598,53 @@ select { cursor: pointer; }
   .btn { transition: none; }
   .btn--primary:hover { transform: none; filter: none; }
 }
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   MOBILE TWEAKS (≤479px)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media (max-width: 479px) {
+
+  /* 1. Header — shrink wordmark, make CTA a normal small pill */
+  .site-header { top: 8px; }
+  .header__inner {
+    height: 56px;
+    padding-inline-start: 16px;
+    padding-inline-end: 8px;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .logo__wordmark { height: 36px; }
+  .site-header .btn {
+    position: static;
+    inset-inline-end: auto;
+    top: auto;
+    bottom: auto;
+    height: auto;
+    padding: 0.5rem 1.1rem;
+    font-size: 0.85rem;
+  }
+
+  /* 2. Hero chips — 2x2 balanced grid */
+  .hero__chips {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 16px;
+  }
+  .hero__chips li {
+    text-align: center;
+    padding: 0.45rem 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  /* 3. Tighten hero bottom + stats spacing */
+  .hero {
+    padding-top: calc(56px + 8px + 32px);
+    padding-bottom: 40px;
+  }
+  .stat-item { padding: 18px 8px; }
+  .stat-item__label { font-size: 0.85rem; line-height: 1.35; }
+
+  /* 4. Hero CTA — slightly trimmer, still full-width for tap target */
+  .btn--hero { padding: 0.85rem 1.5rem; font-size: 1rem; }
+}
