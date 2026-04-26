@@ -30,6 +30,8 @@ body {
   margin: 0;
   font-family: "Heebo", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   color: var(--text);
+  position: relative;
+  isolation: isolate;
   background:
     radial-gradient(1300px 650px at 8% -5%, rgba(20, 184, 166, 0.16), transparent 62%),
     radial-gradient(950px 520px at 94% 2%, rgba(14, 165, 233, 0.12), transparent 56%),
@@ -42,8 +44,29 @@ body::before {
   position: fixed;
   inset: 0;
   pointer-events: none;
-  background: linear-gradient(120deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0));
-  z-index: -1;
+  background-image:
+    url("../images/brand/leadigo_bg_logo_small.png"),
+    url("../images/brand/leadigo_bg_logo_small.png");
+  background-repeat: repeat, repeat;
+  background-size: 18px 18px, 18px 18px;
+  background-position: 0 0, 9px 9px;
+  opacity: 0.11;
+  z-index: 0;
+}
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  z-index: 0;
+}
+
+.site-header,
+main,
+.site-footer {
+  position: relative;
+  z-index: 1;
 }
 
 a {
@@ -218,7 +241,10 @@ video {
   .logo__img--header {
     width: 28px;
     height: 28px;
-    padding: 4px;
+    padding: 0;
+  }
+  .logo__img--wordmark {
+    width: 96px;
   }
   .logo__text {
     font-size: 0.92rem;
@@ -246,11 +272,18 @@ video {
 .logo__img--header {
   width: 30px;
   height: 30px;
-  padding: 4px;
+  padding: 0;
   border-radius: 9px;
-  background: #0b1220;
-  border: 1px solid #1f3048;
-  box-shadow: 0 4px 10px rgba(2, 6, 23, 0.2);
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+.logo__img--wordmark {
+  width: 104px;
+  height: 30px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 0;
 }
 .logo__mark {
   width: 12px;

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="LEADIGO — מערכת חכמה לניהול שירות ומכירה ב-WhatsApp: בוטים, אוטומציות, ריבוי נציגים, שליטה ובקרה." />
     <title>LEADIGO | מערכת לניהול שירות ומכירה ב-WhatsApp</title>
-    <link rel="icon" type="image/png" href="images/brand/leadigo_favicon_green.png" />
+    <link rel="icon" type="image/jpeg" href="images/brand/leadigo_icon_q.jpeg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -17,8 +17,8 @@
     <header class="site-header">
       <div class="container header__inner">
         <div class="logo" aria-label="לוגו LEADIGO">
-          <img class="logo__img logo__img--header" src="images/brand/leadigo_icon_app_white.png" alt="סמל LEADIGO" loading="eager" decoding="async" />
-          <span class="logo__text">LEADIGO</span>
+          <img class="logo__img logo__img--header" src="images/brand/leadigo_icon_q.jpeg" alt="סמל LEADIGO" loading="eager" decoding="async" />
+          <img class="logo__img logo__img--wordmark" src="images/brand/leadigo_wordmark_light.jpeg" alt="לוגו LEADIGO" loading="eager" decoding="async" />
         </div>
         <div class="header__actions">
           <a class="btn btn--ghost" href="#lead">השאירו פרטים</a>
@@ -42,6 +42,51 @@
               </p>
             </div>
           </article>
+
+          <section id="lead" class="section lead lead--top">
+            <div class="container lead__grid">
+              <div class="lead-top__info">
+                <h2 class="section__title lead-top__title"><span>השאירו פרטים</span></h2>
+              </div>
+              <form class="form" id="contact-form" novalidate>
+                <label class="field">
+                  <span>שם מלא</span>
+                  <input name="name" type="text" autocomplete="name" required />
+                </label>
+                <label class="field">
+                  <span>טלפון</span>
+                  <input name="phone" type="tel" autocomplete="tel" inputmode="tel" required />
+                </label>
+                <label class="field">
+                  <span>אימייל (אופציונלי)</span>
+                  <input name="email" type="email" autocomplete="email" />
+                </label>
+                <label class="field">
+                  <span>שם העסק (אופציונלי)</span>
+                  <input name="business" type="text" autocomplete="organization" />
+                </label>
+                <label class="field">
+                  <span>מה הכי חשוב לכם עכשיו?</span>
+                  <select name="focus" required>
+                    <option value="" selected disabled>בחרו</option>
+                    <option value="retention">שימור לקוחות / נטישה</option>
+                    <option value="automations">אוטמציות ומבצעים</option>
+                    <option value="support">מוקד שירות / ריבוי נציגים</option>
+                    <option value="overview">הכל — רוצים תמונת מצב</option>
+                  </select>
+                </label>
+                <label class="field field--full">
+                  <span>הערה קצרה (אופציונלי)</span>
+                  <textarea name="note" rows="3" placeholder="למשל: כמה נציגים, איזו מערכת CRM, או אילו שליחים קיימים"></textarea>
+                </label>
+                <button class="btn btn--primary btn--block" type="submit">שליחה</button>
+                <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+                <p class="form__fallback" id="form-fallback-tel" hidden>
+                  <a class="form-fallback__link" href="tel:+972502203450" dir="ltr">או התקשרו: +972-50-220-3450</a>
+                </p>
+              </form>
+            </div>
+          </section>
 
           <article class="wa-block wa-block--top">
             <div class="wa-block__text">
@@ -142,58 +187,12 @@
         </div>
       </section>
 
-      <section id="lead" class="section lead lead--top">
-        <div class="container lead__grid">
-          <div class="lead-top__info">
-            <h2 class="section__title lead-top__title"><span>השאירו פרטים</span></h2>
-          </div>
-          <form class="form" id="contact-form" novalidate>
-            <label class="field">
-              <span>שם מלא</span>
-              <input name="name" type="text" autocomplete="name" required />
-            </label>
-            <label class="field">
-              <span>טלפון</span>
-              <input name="phone" type="tel" autocomplete="tel" inputmode="tel" required />
-            </label>
-            <label class="field">
-              <span>אימייל (אופציונלי)</span>
-              <input name="email" type="email" autocomplete="email" />
-            </label>
-            <label class="field">
-              <span>שם העסק (אופציונלי)</span>
-              <input name="business" type="text" autocomplete="organization" />
-            </label>
-            <label class="field">
-              <span>מה הכי חשוב לכם עכשיו?</span>
-              <select name="focus" required>
-                <option value="" selected disabled>בחרו</option>
-                <option value="retention">שימור לקוחות / נטישה</option>
-                <option value="automations">אוטמציות ומבצעים</option>
-                <option value="support">מוקד שירות / ריבוי נציגים</option>
-                <option value="overview">הכל — רוצים תמונת מצב</option>
-              </select>
-            </label>
-            <label class="field field--full">
-              <span>הערה קצרה (אופציונלי)</span>
-              <textarea name="note" rows="3" placeholder="למשל: כמה נציגים, איזו מערכת CRM, או אילו שליחים קיימים"></textarea>
-            </label>
-            <button class="btn btn--primary btn--block" type="submit">שליחה</button>
-            <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
-            <p class="form__fallback" id="form-fallback-tel" hidden>
-              <a class="form-fallback__link" href="tel:+972502203450" dir="ltr">או התקשרו: +972-50-220-3450</a>
-            </p>
-          </form>
-        </div>
-      </section>
-
       <section class="hero">
         <div class="container hero__grid">
           <div class="hero__copy">
             <p class="eyebrow">LEADIGO · מוקד שירות ומכירה ב־WhatsApp</p>
             <h1>פשוט, ברור ומהיר: כל השיחות במקום אחד</h1>
             <p class="lead">מענה אוטומטי + נציגים, בקרה בזמן אמת ותהליכי עבודה מסודרים בלי עומס.</p>
-            <p class="contact-line"><a class="inline-link" href="tel:+972502203450" dir="ltr">+972-50-220-3450</a></p>
             <div class="hero__actions">
               <a class="btn btn--primary" href="#lead">השאירו פרטים</a>
             </div>
@@ -253,10 +252,7 @@
 
     <footer class="site-footer">
       <div class="container footer__inner">
-        <img class="footer__logo" src="images/brand/leadigo_icon_app_white.png" alt="סמל LEADIGO" loading="lazy" decoding="async" />
-        <p class="footer__line">
-          <a class="footer__link" href="tel:+972502203450" dir="ltr">+972-50-220-3450</a>
-        </p>
+        <img class="footer__logo" src="images/brand/leadigo_icon_q.jpeg" alt="סמל LEADIGO" loading="lazy" decoding="async" />
         <p class="footer__muted">© <span id="y"></span> LEADIGO · כל הזכויות שמורות</p>
       </div>
     </footer>
