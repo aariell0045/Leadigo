@@ -614,15 +614,6 @@ select { cursor: pointer; }
     gap: 8px;
   }
   .logo__wordmark { height: 36px; }
-  .site-header .btn {
-    position: static;
-    inset-inline-end: auto;
-    top: auto;
-    bottom: auto;
-    height: auto;
-    padding: 0.5rem 1.1rem;
-    font-size: 0.85rem;
-  }
 
   /* 2. Hero chips — 2x2 balanced grid */
   .hero__chips {
