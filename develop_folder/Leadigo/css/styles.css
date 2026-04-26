@@ -269,7 +269,7 @@ h3 {
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 .hero {
   background:
-    linear-gradient(160deg, rgba(28,56,36,0.62) 0%, rgba(14,31,16,0.75) 100%),
+    linear-gradient(160deg, rgba(28,56,36,0.20) 0%, rgba(14,31,16,0.20) 100%),
     url("../images/hero.png") center / cover no-repeat;
   padding-top: calc(64px + 16px + 48px);
   padding-bottom: 72px;
