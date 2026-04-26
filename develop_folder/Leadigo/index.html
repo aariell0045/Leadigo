@@ -3,257 +3,219 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="LEADIGO — מערכת חכמה לניהול שירות ומכירה ב-WhatsApp: בוטים, אוטומציות, ריבוי נציגים, שליטה ובקרה." />
+    <meta name="description" content="LEADIGO - מערכת חכמה לניהול שירות ומכירה ב-WhatsApp: בוטים, אוטומציות, ריבוי נציגים, שליטה ובקרה." />
     <title>LEADIGO | מערכת לניהול שירות ומכירה ב-WhatsApp</title>
-    <link rel="icon" type="image/jpeg" href="images/brand/leadigo_icon_q.jpeg" />
+    <link rel="icon" type="image/png" href="images/brand/logo_icon_on_white.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <a class="skip-link" href="#main">דלג לתוכן</a>
 
+    <!-- ── Header ── -->
     <header class="site-header">
-      <div class="container header__inner">
-        <div class="logo" aria-label="לוגו LEADIGO">
-          <img class="logo__img logo__img--header" src="images/brand/leadigo_icon_q.jpeg" alt="סמל LEADIGO" loading="eager" decoding="async" />
-          <img class="logo__img logo__img--wordmark" src="images/brand/leadigo_wordmark_light.jpeg" alt="לוגו LEADIGO" loading="eager" decoding="async" />
-        </div>
-        <div class="header__actions">
-          <a class="btn btn--ghost" href="#lead">השאירו פרטים</a>
-        </div>
+      <div class="header__inner">
+        <a class="logo" href="/" aria-label="LEADIGO">
+          <img class="logo__wordmark" src="images/brand/logo_wordmark_color.png" alt="Leadigo" />
+        </a>
+        <a class="btn btn--primary btn--sm" href="#lead">לתיאום דמו</a>
       </div>
     </header>
 
     <main id="main">
-      <section class="section wa-solution" id="wa-solution" aria-labelledby="wa-solution-title">
-        <div class="container wa-solution__stack">
-          <h2 class="section__title wa-solution__main-title" id="wa-solution-title">מערכת חכמה לניהול כל פעילות השירות והמכירה ב־WhatsApp</h2>
-          <article class="wa-intro">
-            <div class="wa-intro__text">
-              <h3>הפתרון לעסקים שמנהלים שירות ומכירה ב־WhatsApp</h3>
-              <p>
-                LEADIGO מרכזת במקום אחד את כל מה שצריך כדי לעבוד נכון עם לקוחות ב־WhatsApp: קליטת פניות, בוטים, העברה לנציג,
-                תיעוד מלא ובקרה ניהולית בזמן אמת.
-              </p>
-              <p>
-                התוצאה: פחות עומס, תגובה מהירה יותר, ותהליך עבודה ברור לכל הצוות.
-              </p>
-            </div>
-          </article>
 
-          <section id="lead" class="section lead lead--top">
-            <div class="container lead__grid">
-              <div class="lead-top__info">
-                <h2 class="section__title lead-top__title"><span>השאירו פרטים</span></h2>
-              </div>
-              <form class="form" id="contact-form" novalidate>
-                <label class="field">
-                  <span>שם מלא</span>
-                  <input name="name" type="text" autocomplete="name" required />
-                </label>
-                <label class="field">
-                  <span>טלפון</span>
-                  <input name="phone" type="tel" autocomplete="tel" inputmode="tel" required />
-                </label>
-                <label class="field">
-                  <span>אימייל (אופציונלי)</span>
-                  <input name="email" type="email" autocomplete="email" />
-                </label>
-                <label class="field">
-                  <span>שם העסק (אופציונלי)</span>
-                  <input name="business" type="text" autocomplete="organization" />
-                </label>
-                <label class="field">
-                  <span>מה הכי חשוב לכם עכשיו?</span>
-                  <select name="focus" required>
-                    <option value="" selected disabled>בחרו</option>
-                    <option value="retention">שימור לקוחות / נטישה</option>
-                    <option value="automations">אוטמציות ומבצעים</option>
-                    <option value="support">מוקד שירות / ריבוי נציגים</option>
-                    <option value="overview">הכל — רוצים תמונת מצב</option>
-                  </select>
-                </label>
-                <label class="field field--full">
-                  <span>הערה קצרה (אופציונלי)</span>
-                  <textarea name="note" rows="3" placeholder="למשל: כמה נציגים, איזו מערכת CRM, או אילו שליחים קיימים"></textarea>
-                </label>
-                <button class="btn btn--primary btn--block" type="submit">שליחה</button>
-                <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
-                <p class="form__fallback" id="form-fallback-tel" hidden>
-                  <a class="form-fallback__link" href="tel:+972502203450" dir="ltr">או התקשרו: +972-50-220-3450</a>
-                </p>
-              </form>
-            </div>
-          </section>
-
-          <article class="wa-block wa-block--top">
-            <div class="wa-block__text">
-              <p>
-                מערכת אחת חכמה שרוכזת את כל פעילות השירות והמכירה ב־WhatsApp למקום אחד נוח, מבוקר ומבוסס נתונים כך ששום פעולה לא
-                הולכת לאיבוד, כל צוות יודע מה עליו לטפל, והלקוח מקבל חוויה שירותית מקצועית.
-              </p>
-            </div>
-            <figure class="wa-block__media">
-              <img src="images/leadigo-dashboard.png" alt="מסך מערכת LEADIGO לניהול שיחות ומכירה ב-WhatsApp" loading="eager" decoding="async" />
-            </figure>
-          </article>
-
-          <article class="wa-block wa-block--bottom">
-            <figure class="wa-block__media">
-              <img src="images/leadigo-bot.png" alt="בוט ותסריטי שיחה לניהול אוטומטי ב-WhatsApp" loading="lazy" decoding="async" />
-            </figure>
-            <div class="wa-block__text">
-              <h3>מענה חכם ואוטומטי באמצעות בוטים ותסריטי שיחה</h3>
-              <ul class="wa-block__list" role="list">
-                <li>עורך מתקדם לניהול תרחישי שיחה עם לקוח</li>
-                <li>שליחת הודעות אוטומטיות בתפוצה</li>
-                <li>ניוב שיחות לנציג/צוות הרלוונטי</li>
-                <li>מעבר לעבודה ידנית בלחצן שיחה</li>
-                <li>מענה מבוסס AI</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="wa-block wa-block--support">
-            <div class="wa-block__text">
-              <h3>ליווי ותמיכה בשימוש במוצר</h3>
-              <ul class="wa-block__list" role="list">
-                <li>אפיון מוקדם והקמה ראשונית לפי הצרכים של הארגון שלכם</li>
-                <li>בניית עץ שירות ובוטים מותאמים</li>
-                <li>הדרכת נציגים על שימוש במערכת</li>
-                <li>מנהל תיק לקוח לכל שאלה</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="wa-block wa-block--fourth">
-            <div class="wa-block__text">
-              <h3>צ'אטים והתכתבות אישית עם כל נמען</h3>
-              <p>
-                ניתן לנהל שיחות פרטיות ודו כיווניות עם כל נמען, להשיב לכל לקוח שפונה אלינו ב־WhatsApp וליצור לו שירות אישי מול
-                נציג כולל הודעות שמורות לייעול המענה, מעקב, צ'אטים יוצאים ועוד.
-              </p>
-            </div>
-          </article>
-
-          <section class="section testimonials" aria-label="ביקורות לקוחות">
-            <h2 class="section__title">מה לקוחות אומרים</h2>
-            <div class="reviews">
-              <article class="review">
-                <div class="review__head">
-                  <span class="review__avatar" aria-hidden="true">א</span>
-                  <div>
-                    <h3 class="review__name">אבי כהן</h3>
-                    <p class="review__role">מנהל שירות</p>
-                  </div>
-                  <div class="stars" aria-label="דירוג 5 מתוך 5">
-                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
-                  </div>
-                </div>
-                <p class="review__text">הצלחנו לסדר את כל הפניות בוואטסאפ במקום אחד. התגובות מהירות יותר והצוות עובד הרבה יותר מסודר.</p>
-              </article>
-
-              <article class="review">
-                <div class="review__head">
-                  <span class="review__avatar" aria-hidden="true">נ</span>
-                  <div>
-                    <h3 class="review__name">נופר לוי</h3>
-                    <p class="review__role">בעלת עסק</p>
-                  </div>
-                  <div class="stars" aria-label="דירוג 5 מתוך 5">
-                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
-                  </div>
-                </div>
-                <p class="review__text">הבוטים חסכו לנו שעות כל יום, ועדיין יש שליטה מלאה מתי להעביר לנציג. שיפור ענק בחוויית הלקוח.</p>
-              </article>
-
-              <article class="review">
-                <div class="review__head">
-                  <span class="review__avatar" aria-hidden="true">מ</span>
-                  <div>
-                    <h3 class="review__name">מיכל פרץ</h3>
-                    <p class="review__role">מנהלת מכירות</p>
-                  </div>
-                  <div class="stars" aria-label="דירוג 5 מתוך 5">
-                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
-                  </div>
-                </div>
-                <p class="review__text">כל שיחה מתועדת, כל נציג יודע מה הסטטוס, והכי חשוב — יותר סגירות כי אין יותר הודעות שנופלות בין הכיסאות.</p>
-              </article>
-            </div>
-          </section>
-        </div>
-      </section>
-
-      <section class="hero">
-        <div class="container hero__grid">
-          <div class="hero__copy">
-            <p class="eyebrow">LEADIGO · מוקד שירות ומכירה ב־WhatsApp</p>
-            <h1>פשוט, ברור ומהיר: כל השיחות במקום אחד</h1>
-            <p class="lead">מענה אוטומטי + נציגים, בקרה בזמן אמת ותהליכי עבודה מסודרים בלי עומס.</p>
-            <div class="hero__actions">
-              <a class="btn btn--primary" href="#lead">השאירו פרטים</a>
-            </div>
-            <ul class="hero__checklist" role="list">
-              <li>בוטים + AI + נציגים</li>
-              <li>תיעוד וחיפוש מלא</li>
-              <li>שליטה על עומסים וצוותים</li>
+      <!-- ── Hero ── -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <p class="eyebrow">מוקד שירות ומכירה ב־WhatsApp</p>
+            <h1 id="hero-title">כל השיחות<br>במקום אחד</h1>
+            <p class="hero__sub">בוטים חכמים + נציגים, בקרה בזמן אמת - בלי עומס ובלי הודעות שנופלות.</p>
+            <a class="btn btn--primary btn--hero" href="#lead">לתיאום דמו ←</a>
+            <ul class="hero__chips" role="list">
+              <li>AI + בוטים</li>
+              <li>ריבוי נציגים</li>
+              <li>תיעוד מלא</li>
+              <li>24/7</li>
             </ul>
           </div>
-          <div class="hero__panel" aria-hidden="true">
-            <div class="mock-card">
-              <div class="mock-card__header">
-                <span class="mock-dot"></span>
-                <span class="mock-dot"></span>
-                <span class="mock-dot"></span>
+        </div>
+      </section>
+
+      <!-- ── Stats ── -->
+      <section class="stats-bar" aria-label="מספרי מפתח">
+        <div class="container stats-bar__row">
+          <div class="stat-item">
+            <span class="stat-item__num">24/7</span>
+            <span class="stat-item__label">מענה אוטומטי גם מחוץ לשעות</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-item__num">1</span>
+            <span class="stat-item__label">מספר וואטסאפ לכל הצוות</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-item__num">360°</span>
+            <span class="stat-item__label">תיעוד, דוחות ובקרה</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Features ── -->
+      <section class="section features" aria-labelledby="features-title">
+        <div class="container">
+          <p class="eyebrow eyebrow--dark">מה תקבלו</p>
+          <h2 id="features-title">הכלים שצריך כדי לנהל WhatsApp כמו מקצוענים</h2>
+          <p class="section__sub">מערכת אחת שמרכזת בוטים, נציגים, דוחות וליווי - בלי להתפשר על אחד.</p>
+          <div class="features__grid">
+
+            <article class="feat-card">
+              <div class="feat-card__icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
               </div>
-              <div class="mock-card__body">
-                <div class="mock-line mock-line--short"></div>
-                <div class="mock-line"></div>
-                <div class="mock-line"></div>
-                <div class="mock-pill">בוט: תזכורת + הצעה אישית</div>
-                <div class="mock-pill mock-pill--alt">העברה לנציג · SLA</div>
+              <h3>בוטים ואוטומציות</h3>
+              <p>עורך תרחישי שיחה מתקדם, שליחת הודעות בתפוצה, מענה חכם מבוסס AI - ללא עצירה.</p>
+            </article>
+
+            <article class="feat-card">
+              <div class="feat-card__icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
               </div>
+              <h3>ריבוי נציגים</h3>
+              <p>מספר וואטסאפ אחד, צוות שלם. ניתוב שיחות אוטומטי, שליטה על עומסים, מעבר ידני בלחצן.</p>
+            </article>
+
+            <article class="feat-card">
+              <div class="feat-card__icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+              </div>
+              <h3>בקרה ניהולית</h3>
+              <p>דוחות בזמן אמת, ניטור עומסים וצוותים, מעקב אחר כל פנייה מהתחלה ועד סגירה.</p>
+            </article>
+
+            <article class="feat-card">
+              <div class="feat-card__icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.36 12 19.79 19.79 0 0 1 1.29 3.33 2 2 0 0 1 3.11 1.2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 5.61 5.61l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 15.92z"/></svg>
+              </div>
+              <h3>ליווי מלא</h3>
+              <p>אפיון, הקמה, הדרכת נציגים ומנהל תיק לקוח - אנחנו איתכם לאורך כל הדרך.</p>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Lead Form ── -->
+      <section class="form-section" id="lead" aria-labelledby="lead-title">
+        <div class="container form-section__inner">
+          <p class="eyebrow eyebrow--dark">צרו קשר</p>
+          <h2 id="lead-title">מתחילים?</h2>
+          <p class="form-section__sub">השאירו פרטים ונחזור אליכם תוך יום עסקים עם תהליך קצר וברור.</p>
+          <form class="form" id="contact-form" novalidate>
+            <label class="field">
+              <span>שם מלא</span>
+              <input name="name" type="text" autocomplete="name" required placeholder="ישראל ישראלי" />
+            </label>
+            <label class="field">
+              <span>טלפון</span>
+              <input name="phone" type="tel" autocomplete="tel" inputmode="tel" required placeholder="050-000-0000" />
+            </label>
+            <label class="field">
+              <span>אימייל (אופציונלי)</span>
+              <input name="email" type="email" autocomplete="email" />
+            </label>
+            <label class="field">
+              <span>שם העסק (אופציונלי)</span>
+              <input name="business" type="text" autocomplete="organization" />
+            </label>
+            <label class="field field--full">
+              <span>מה הכי חשוב לכם עכשיו?</span>
+              <select name="focus" required>
+                <option value="" selected disabled>בחרו</option>
+                <option value="retention">שימור לקוחות / נטישה</option>
+                <option value="automations">אוטמציות ומבצעים</option>
+                <option value="support">מוקד שירות / ריבוי נציגים</option>
+                <option value="overview">הכל - רוצים תמונת מצב</option>
+              </select>
+            </label>
+            <label class="field field--full">
+              <span>הערה קצרה (אופציונלי)</span>
+              <textarea name="note" rows="3" placeholder="למשל: כמה נציגים, איזו מערכת CRM, או אילו שליחים קיימים"></textarea>
+            </label>
+            <div class="field--full">
+              <button class="btn btn--primary btn--block" type="submit">שליחה ←</button>
             </div>
-            <p class="mock-note">ללא אסטים — תצוגה גרפית בלבד</p>
+            <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+            <p class="form__fallback" id="form-fallback-tel" hidden>
+              <a class="form-fallback__link" href="tel:+972502203450" dir="ltr">או התקשרו: +972-50-220-3450</a>
+            </p>
+          </form>
+        </div>
+      </section>
+
+      <!-- ── Testimonials ── -->
+      <section class="section testimonials" aria-label="ביקורות לקוחות">
+        <div class="container">
+          <p class="eyebrow eyebrow--dark">לקוחות מספרים</p>
+          <h2 class="section__title">מה אומרים עלינו</h2>
+          <div class="reviews">
+
+            <article class="review">
+              <div class="stars" aria-label="דירוג 5 מתוך 5">
+                <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+              </div>
+              <p class="review__text">הצלחנו לסדר את כל הפניות בוואטסאפ במקום אחד. התגובות מהירות יותר והצוות עובד הרבה יותר מסודר.</p>
+              <div class="review__author">
+                <span class="review__avatar" aria-hidden="true">א</span>
+                <div>
+                  <p class="review__name">אבי כהן</p>
+                  <p class="review__role">מנהל שירות</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="review">
+              <div class="stars" aria-label="דירוג 5 מתוך 5">
+                <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+              </div>
+              <p class="review__text">הבוטים חסכו לנו שעות כל יום, ועדיין יש שליטה מלאה מתי להעביר לנציג. שיפור ענק בחוויית הלקוח.</p>
+              <div class="review__author">
+                <span class="review__avatar" aria-hidden="true">נ</span>
+                <div>
+                  <p class="review__name">נופר לוי</p>
+                  <p class="review__role">בעלת עסק</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="review">
+              <div class="stars" aria-label="דירוג 5 מתוך 5">
+                <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+              </div>
+              <p class="review__text">כל שיחה מתועדת, כל נציג יודע מה הסטטוס - יותר סגירות כי אין הודעות שנופלות בין הכיסאות.</p>
+              <div class="review__author">
+                <span class="review__avatar" aria-hidden="true">מ</span>
+                <div>
+                  <p class="review__name">מיכל פרץ</p>
+                  <p class="review__role">מנהלת מכירות</p>
+                </div>
+              </div>
+            </article>
+
           </div>
         </div>
       </section>
 
-      <section class="stats" aria-label="מספרים">
-        <div class="container stats__row">
-          <div class="stat">
-            <span class="stat__num">24/7</span>
-            <span class="stat__label">אוטומציות ומענה — גם מחוץ לשעות העבודה</span>
-          </div>
-          <div class="stat">
-            <span class="stat__num">1</span>
-            <span class="stat__label">מספר וואטסאפ אחד — צוות שלם מאחורי הקלעים</span>
-          </div>
-          <div class="stat">
-            <span class="stat__num">360°</span>
-            <span class="stat__label">תיעוד, דוחות, והחלטות שמבוססות על נתונים</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="section closing-cta" aria-label="סיום">
-        <div class="container closing-cta__inner">
-          <h2>רוצים לראות איך זה עובד אצלכם?</h2>
-          <p>השאירו פרטים ונחזור אליכם עם תהליך קצר וברור שמתאים לעסק שלכם.</p>
-          <div class="closing-cta__actions">
-            <a class="btn btn--primary" href="#lead">השאירו פרטים</a>
-          </div>
-        </div>
-      </section>
     </main>
 
+    <!-- ── Footer ── -->
     <footer class="site-footer">
       <div class="container footer__inner">
-        <img class="footer__logo" src="images/brand/leadigo_icon_q.jpeg" alt="סמל LEADIGO" loading="lazy" decoding="async" />
-        <p class="footer__muted">© <span id="y"></span> LEADIGO · כל הזכויות שמורות</p>
+        <a class="logo logo--footer" href="/" aria-label="LEADIGO">
+          <img src="images/brand/logo_wordmark_on_dark.png" alt="LEADIGO" class="footer__wordmark" width="220" />
+        </a>
+        <p class="footer__copy">© <span id="y"></span> LEADIGO · כל הזכויות שמורות</p>
       </div>
     </footer>
 
