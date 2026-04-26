@@ -190,11 +190,11 @@ h3 {
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 .site-header {
   position: fixed;
-  top: 12px;
+  top: 16px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 100;
-  width: calc(100% - 32px);
+  width: calc(100% - 48px);
   max-width: calc(var(--max) + 48px);
   border-radius: 999px;
   background: rgba(238, 247, 235, 0.96);
@@ -269,7 +269,7 @@ h3 {
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 .hero {
   background: linear-gradient(160deg, #1c3824 0%, var(--green-deep) 100%);
-  padding-top: calc(64px + 12px + 4px);
+  padding-top: calc(64px + 16px + 48px);
   padding-bottom: 72px;
 }
 .hero__inner {
