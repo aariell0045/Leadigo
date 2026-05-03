@@ -49,6 +49,15 @@
       .then(function () {
         status.textContent = "התקבל — נחזור אליכם בהקדם.";
         status.style.color = "#0f766e";
+
+        if (typeof fbq === "function") {
+          fbq("track", "Lead", {
+            content_name: "Contact Form",
+            content_category: "Landing Page Lead",
+            source: "contact.leadigo.co.il",
+          });
+        }
+
         form.reset();
       })
       .catch(function () {
